@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>削除確認</title>
+</head>
+<body>
+    <h2>以下の項目を削除しますか？</h2>
+
+    <table border="1">
+        <tr><th>名称</th><td><%= data.name %></td></tr>
+        <tr><th>種類</th><td><%= data.type %></td></tr>
+        <tr><th>口径</th><td><%= data.caliber %></td></tr>
+        <tr><th>装弾数</th><td><%= data.capacity %></td></tr>
+        <tr><th>製造国</th><td><%= data.origin %></td></tr>
+    </table>
+
+    <form action="/firearm/delete/<%= id %>" method="post">
+        <button type="submit">削除する</button>
+    </form>
+
+    <a href="/firearm/<%= id %>">詳細に戻る</a>
+</body>
+</html>

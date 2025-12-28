@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の編集</h2>
+  <form action="/firearm/update/<%= data.id - 1 %>" method="POST">
+    <table>
+      <tr><th>項目</th><th>データ</th></tr>
+      <tr><th>ID</th><td><%= data.id %></td></tr>
+      <tr><td>名称</td><td><input type="text" name="name" value="<%= data.name %>"></td></tr>
+      <tr><td>種類</td><td><input type="text" name="type" value="<%= data.type %>"></td></tr>
+      <tr><td>口径</td><td><input type="text" name="caliber" value="<%= data.caliber %>"></td></tr>
+      <tr><td>装弾数</td><td><input type="text" name="capacity" value="<%= data.capacity %>"></td></tr>
+      <tr><td>製造国</td><td><input type="text" name="origin" value="<%= data.origin %>"></td></tr>
+    </table>
+    <input type="submit" values="登録">
+  </form>
+  <a href="/firearm/<%= data.id - 1 %>">詳細に戻る</a>
+</body>
+</html>

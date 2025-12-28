@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>銃追加</title>
+</head>
+<body>
+    <h2>追加したい項目を入力してください</h2>
+
+    <form action="/keiyo2" method="POST">
+        <label for="name">名称:</label>
+        <input type="text" name="name" required><br>
+        <label for="type">種類:</label>
+        <input type="text" name="type" required><br>
+        <label for="caliber">口径:</label>
+        <input type="text" name="caliber"><br>
+        <label for="capacity">装弾数:</label>
+        <input type="text" name="capacity" required><br>
+        <label for="origin">製造国:</label>
+        <input type="text" name="origin" required><br>
+        <input type="submit" values="登録">
+    </form>
+    <a href="/firearm">銃一覧に戻る</a>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>駅名追加</title>
+</head>
+<body>
+    <h2>追加したい項目を入力してください</h2>
+
+    <form action="/gundam" method="POST">
+        <label for="model">型式番号:</label>
+        <input type="text" name="model" required><br>
+        <label for="name">名称:</label>
+        <input type="text" name="name" required><br>
+        <label for="series">登場作品:</label>
+        <input type="text" name="series"><br>
+        <label for="pilot">搭乗者:</label>
+        <input type="text" name="pilot" required><br>
+        <label for="affiliation">所属陣営:</label>
+        <input type="text" name="affiliation" required><br>
+        <input type="submit" values="登録">
+    </form>
+    <a href="/gundam">モビルスーツ一覧に戻る</a>
+</body>
+</html>

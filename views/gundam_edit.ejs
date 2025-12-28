@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の編集</h2>
+  <form action="/gundam/update/<%= data.id - 1 %>" method="POST">
+    <table>
+      <tr><th>項目</th><th>データ</th></tr>
+      <tr><th>ID</th><td><%= data.id %></td></tr>
+      <tr><td>型式番号</td><td><input type="text" name="model" value="<%= data.model %>"></td></tr>
+      <tr><td>名称</td><td><input type="text" name="name" value="<%= data.name %>"></td></tr>
+      <tr><td>登場作品</td><td><input type="text" name="series" value="<%= data.series %>"></td></tr>
+      <tr><td>搭乗者</td><td><input type="text" name="pilot" value="<%= data.pilot %>"></td></tr>
+      <tr><td>所属陣営</td><td><input type="text" name="affiliation" value="<%= data.affiliation %>"></td></tr>
+    </table>
+    <input type="submit" values="登録">
+  </form>
+  <a href="/gundam/<%= data.id - 1 %>">詳細に戻る</a>
+</body>
+</html>

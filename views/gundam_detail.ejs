@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の詳細</h2>
+  <table>
+    <tr><th>項目</th><th>データ</th></tr>
+    <tr><td>型式番号</td><td><%= data.model %></td></tr>
+    <tr><td>名称</td><td><%= data.name %></td></tr>
+    <tr><td>登場作品</td><td><%= data.series %></td></tr>
+    <tr><td>搭乗者</td><td><%= data.pilot %></td></tr>
+    <tr><td>所属陣営</td><td><%= data.affiliation %></td></tr>
+  </table>
+  <a href="/gundam/edit/<%= id %>">編集</a>
+
+  <a href="/gundam/delete/<%= id %>">削除</a>
+
+  <a href="/gundam">モビルスーツ一覧に戻る</a>
+</body>
+</html>

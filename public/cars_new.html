@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>車追加</title>
+</head>
+<body>
+    <h2>追加したい項目を入力してください</h2>
+
+    <form action="/cars" method="POST">
+        <label for="name">名称:</label>
+        <input type="text" name="name" required><br>
+        <label for="manufacturer">メーカー:</label>
+        <input type="text" name="manufacturer" required><br>
+        <label for="engine">エンジン:</label>
+        <input type="text" name="engine"><br>
+        <label for="displacement">排気量:</label>
+        <input type="text" name="displacement" required><br>
+        <label for="drivetype">駆動方式:</label>
+        <input type="text" name="drivetype" required><br>
+        <input type="submit" values="登録">
+    </form>
+    <a href="/cars">車一覧に戻る</a>
+</body>
+</html>

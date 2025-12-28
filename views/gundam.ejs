@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>モビルスーツ一覧</title>
+</head>
+<body>
+  <h2>モビルスーツ一覧</h2>
+  <table>
+    <tr><th>ID</th><th>型式番号</th><th>モビルスーツ名称</th></tr>
+      <% let number = 0 %>
+      <% for( let row of data ) { %>
+        <tr><td><%= row.id %></td>
+        <td><%= row.model %></td>
+        <td><a href="/gundam/<%= number %>"><%= row.name %></a></td></tr>
+        <% number += 1 %>
+      <% } %>
+  </table>
+  <a href="/gundam/create">追加</a>
+  <a href="/toppage">トップページへ戻る</a>
+</body>
+</html>

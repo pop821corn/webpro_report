@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の詳細</h2>
+  <table>
+    <tr><th>項目</th><th>データ</th></tr>
+    <tr><td>名称</td><td><%= data.name %></td></tr>
+    <tr><td>種類</td><td><%= data.type %></td></tr>
+    <tr><td>口径</td><td><%= data.caliber %></td></tr>
+    <tr><td>装弾数</td><td><%= data.capacity %></td></tr>
+    <tr><td>製造国</td><td><%= data.origin %></td></tr>
+  </table>
+  <a href="/firearm/edit/<%= id %>">編集</a>
+
+  <a href="/firearm/delete/<%= id %>">削除</a>
+
+  <a href="/firearm">銃一覧に戻る</a>
+</body>
+</html>

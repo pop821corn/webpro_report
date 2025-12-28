@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>銃一覧</title>
+</head>
+<body>
+  <h2>銃一覧</h2>
+  <table>
+    <tr><th>ID</th><th>種類</th><th>名称</th></tr>
+      <% let number = 0 %>
+      <% for( let row of data ) { %>
+        <tr><td><%= row.id %></td>
+        <td><%= row.type %></td>
+        <td><a href="/firearm/<%= number %>"><%= row.name %></a></td></tr>
+        <% number += 1 %>
+      <% } %>
+  </table>
+  <a href="/firearm/create">追加</a>
+  <a href="/toppage">トップページへ戻る</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>削除確認</title>
+</head>
+<body>
+    <h2>以下の項目を削除しますか？</h2>
+
+    <table border="1">
+        <tr><th>型式番号</th><td><%= data.model %></td></tr>
+        <tr><th>名称</th><td><%= data.name %></td></tr>
+        <tr><th>登場作品</th><td><%= data.series %></td></tr>
+        <tr><th>搭乗者</th><td><%= data.pilot %></td></tr>
+        <tr><th>所属陣営</th><td><%= data.affiliation %></td></tr>
+    </table>
+
+    <form action="/gundam/delete/<%= id %>" method="post">
+        <button type="submit">削除する</button>
+    </form>
+
+    <a href="/gundam/<%= id %>">詳細に戻る</a>
+</body>
+</html>

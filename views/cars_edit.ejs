@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の編集</h2>
+  <form action="/cars/update/<%= data.id - 1 %>" method="POST">
+    <table>
+      <tr><th>項目</th><th>データ</th></tr>
+      <tr><th>ID</th><td><%= data.id %></td></tr>
+      <tr><td>名称</td><td><input type="text" name="name" value="<%= data.name %>"></td></tr>
+      <tr><td>メーカー</td><td><input type="text" name="manufacturer" value="<%= data.manufacturer %>"></td></tr>
+      <tr><td>エンジン</td><td><input type="text" name="engine" value="<%= data.engine %>"></td></tr>
+      <tr><td>排気量</td><td><input type="text" name="displacement" value="<%= data.displacement %>"></td></tr>
+      <tr><td>駆動方式</td><td><input type="text" name="drivetype" value="<%= data.drivetype %>"></td></tr>
+    </table>
+    <input type="submit" values="登録">
+  </form>
+  <a href="/cars/<%= data.id - 1 %>">詳細に戻る</a>
+</body>
+</html>
