@@ -33,7 +33,7 @@ let cars_list = [
   { id:6, name:"シビック TypeR（FL5）", manufacturer:"ホンダ", engine:"K20C", displacement:"1,995cc", drivetype:"FR" }
 ];
 
-app.get("/toppage", (req, res) => {
+app.get("/", (req, res) => {
   res.render('toppage');
 });
 
