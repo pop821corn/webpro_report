@@ -30,7 +30,7 @@ let cars_list = [
   { id:3, name:"NSX（NC1）", manufacturer:"ホンダ", engine:"JNC", displacement:"3,492cc", drivetype:"4WD" },
   { id:4, name:"ロードスター（ND)", manufacturer:"マツダ", engine:"P5-VP", displacement:"1,496cc", drivetype:"FR" },
   { id:5, name:"RX-7（FD3S）", manufacturer:"マツダ", engine:"13B-REW", displacement:"1,308cc", drivetype:"FR" },
-  { id:6, name:"シビック TypeR（FL5）", manufacturer:"ホンダ", engine:"K20C", displacement:"1,995cc", drivetype:"FR" }
+  { id:6, name:"シビック TypeR（FL5）", manufacturer:"ホンダ", engine:"K20C", displacement:"1,995cc", drivetype:"FF" }
 ];
 
 app.get("/", (req, res) => {
